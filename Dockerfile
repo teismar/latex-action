@@ -4,7 +4,7 @@ FROM texlive/texlive:latest
 # Install additional dependencies if needed
 RUN apt-get update && \
     apt-get install -y \
-    lualatex \
+    texlive-full \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
